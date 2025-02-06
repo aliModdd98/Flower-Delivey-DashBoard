@@ -5,7 +5,7 @@ import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { PiTelegramLogo } from "react-icons/pi";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { SlSocialFacebook, SlSocialTwitter } from "react-icons/sl";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useReduxSelector } from "../../../store/store";
 import { EnumsDialogShow, EnumsSearchParams } from "../../../types/global";
 import CartModal from "./CartModal";
@@ -47,6 +47,9 @@ const Navbar = () => {
           <button className="hidden lg:inline-block w-1/2 h-[81px] text-center border-r border-textPrimaryColor font-medium text-base ">
             Contact
           </button>
+          <Link to="/dashboard">
+            <h6 className="text-purple-700">Dashboard</h6>
+          </Link>
         </div>
         <div className="lg:w-1/4 ">
           {localStorage.getItem("token") ? (
