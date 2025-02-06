@@ -1,9 +1,9 @@
 import { useSearchParams } from "react-router-dom";
 import { EnumsDialogShow, EnumsSearchParams } from "../types/global";
-import VerificationDialog from "../components/auth/VerificationDialog";
-import LoginFormDialog from "../components/auth/LoginFormDialog";
-import RegisterFormDialog from "../components/auth/RegisterFormDialog";
-import ForgotPasswordDialog from "../components/auth/ForgotPasswordDialog";
+import VerificationDialog from "../Components/auth/VerificationDialog";
+import LoginFormDialog from "../Components/auth/LoginFormDialog";
+import RegisterFormDialog from "../Components/auth/RegisterFormDialog";
+import ForgotPasswordDialog from "../Components/auth/ForgotPasswordDialog";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useDialogRenderer = (user: any) => {
