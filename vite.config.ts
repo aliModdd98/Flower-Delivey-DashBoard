@@ -14,7 +14,4 @@ export default defineConfig({
       },
     },
   },
-  server: {
-    historyApiFallback: true, // Fix routing issues
-  },
 });
